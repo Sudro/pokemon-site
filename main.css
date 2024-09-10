@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+body {
+  font-family: 'Sigmar One', cursive;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.center-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-text {
+  font-size: 150px;
+  color: transparent;
+  background: url(3.jpeg);
+  -webkit-background-clip: text;
+  animation: animate 10s infinite linear;
+  margin-right: 50px;
+}
+
+@keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+.pokeball-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.pokeball-top,
+.pokeball-bottom {
+  width: 100%;
+  height: auto;
+}
+
+.pokeball-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: openPokeballTop 2s forwards;
+  transform-origin: center bottom;
+}
+
+.pokeball-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: openPokeballBottom 2s forwards;
+  transform-origin: center top;
+}
+
+.pokemon-image {
+  position: absolute;
+  top: 23%;  
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 200px;  
+  opacity: 0;
+  animation: appearPokemon 1.5s forwards 2s;
+}
+
+@keyframes openPokeballTop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-160px); 
+  }
+}
+
+@keyframes openPokeballBottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(160px); 
+  }
+}
+
+@keyframes appearPokemon {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
