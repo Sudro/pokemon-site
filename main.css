@@ -19,7 +19,7 @@ body {
 .main-text {
   font-size: 150px;
   color: transparent;
-  background: url(3.jpeg);
+  background: url(back.jpeg);
   -webkit-background-clip: text;
   animation: animate 10s infinite linear;
   margin-right: 50px;
