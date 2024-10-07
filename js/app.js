@@ -49,8 +49,8 @@ function showPokemon(data) {
 		});
 	} else {
 		pokeballContainer.innerHTML = `
-            <img src="top-lid.png" class="pokeball-top">
-            <img src="bottom-lid.png" class="pokeball-bottom">
+            <img src="../top-lid.png" class="pokeball-top">
+            <img src="../bottom-lid.png" class="pokeball-bottom">
             <p>Не удалось загрузить покемона</p>
         `;
 		pokemonInfo.innerHTML = `
